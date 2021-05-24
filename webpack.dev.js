@@ -13,7 +13,14 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true, //isvalom pries tai buvusius dailus diste
   },
-  module: {},
+  module: {
+    rules: [
+      {
+        test: /\.css$/i, //pritaikom css failam
+        use: ["style-loader", "css-loader"], //uzkraunam css
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/html/template.html",

@@ -54,8 +54,17 @@ plugins: [
     }),
 
 
-    CSS
+  7.   CSS
     https://webpack.js.org/guides/asset-management/#loading-css
+    npm install --save-dev style-loader css-loader
+    koreguojam dev.js, kad css failam naudojam css loaderi
+    modulyje taisykle: 
+     rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
 
     BABEL
 
