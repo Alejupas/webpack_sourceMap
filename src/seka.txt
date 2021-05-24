@@ -9,9 +9,14 @@ npm install webpack webpack-cli --save-dev
 
 2. create .gitignore and add to it node_modules, as well dist directory
 
-3. iskvieciam webpacka, paruosimas produkcijai:
+3. susikuriam webpack.dev.js , uzpildom ji.
+
+4. iskvieciam webpacka, paruosimas produkcijai:
 sugeneruojam optimalius failus (is src) i viena: (folder dist, main.js):
  npx webpack --mode production
 
-sukompiliavimas kurimui (development mode) - IIFE imediately invoked function expression
- npx webpack --mode development
+ 5. pridedam webpack konfiguracijos faila: 
+ pakeiciam scripta, kad start scriptas paleidzia dev konfiguration
+    "start": "webpack --config webpack.dev.js"
+
+
