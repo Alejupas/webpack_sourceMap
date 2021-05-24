@@ -15,9 +15,20 @@ module.exports = {
   },
   module: {
     rules: [
+      //css loader
       {
         test: /\.css$/i, //pritaikom css failam
         use: ["style-loader", "css-loader"], //uzkraunam css
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
