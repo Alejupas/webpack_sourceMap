@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  devtool: "source-map",
   entry: {
     //kuri faila webpack paims kaip pagrindini faila
     main: path.resolve(__dirname, "./src/app.js"),
