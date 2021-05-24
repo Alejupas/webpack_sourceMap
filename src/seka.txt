@@ -20,6 +20,7 @@ sugeneruojam optimalius failus (is src) i viena: (folder dist, main.js):
     "start": "webpack --config webpack.dev.js"
 
 6. HTML generavimo pluginas
+https://webpack.js.org/plugins/html-webpack-plugin/
 npm install --save-dev html-webpack-plugin
 webpack.dev.js>>
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -52,8 +53,14 @@ plugins: [
       },
     }),
 
+
     CSS
+    https://webpack.js.org/guides/asset-management/#loading-css
+
+    BABEL
+
+    DEV SERVER
 
     IMG
 
-    
+    IMG COMPRESS

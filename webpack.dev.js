@@ -8,7 +8,11 @@ module.exports = {
     //kuri faila webpack paims kaip pagrindini faila
     main: path.resolve(__dirname, "./src/app.js"),
   },
-  output: {},
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true, //isvalom pries tai buvusius dailus diste
+  },
   module: {},
   plugins: [
     new HtmlWebpackPlugin({
