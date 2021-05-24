@@ -19,4 +19,41 @@ sugeneruojam optimalius failus (is src) i viena: (folder dist, main.js):
  pakeiciam scripta, kad start scriptas paleidzia dev konfiguration
     "start": "webpack --config webpack.dev.js"
 
+6. HTML generavimo pluginas
+npm install --save-dev html-webpack-plugin
+webpack.dev.js>>
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+prie plugins   plugins: [new HtmlWebpackPlugin()],
 
+inicijuojam plugina confige ir nurodom jam naudot musu template.html
+plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/html/template.html",
+    }),
+
+    irasom title dinamiskai: 
+     templateParameters:
+     plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/html/template.html",
+       title: "Now we know webpack.",
+    }),
+       
+
+pasalinam komentarus is template.html kad nesimatytu index.html : 
+plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/html/template.html",
+      templateParameters: {
+        title: "Now we know webpack.",
+      },
+      minify: {
+        removeComments: true,
+      },
+    }),
+
+    CSS
+
+    IMG
+
+    
