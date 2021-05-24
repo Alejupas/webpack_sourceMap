@@ -1,3 +1,7 @@
+0. pasikuriam nauja projekta prisidedam git ir github
+
+0.5 inicializuot npm
+
 1. instaliuojam webPack
 npm install webpack webpack-cli --save-dev
 
