@@ -7,9 +7,7 @@ npm init
 1. instaliuojam webPack
 npm install webpack webpack-cli --save-dev
 
-1.5 pasirasom .gitignore ir idedam node_modules
-
-2. create .gitignore and add to it node_modules
+2. create .gitignore and add to it node_modules, as well dist directory
 
 3. iskvieciam webpacka, paruosimas produkcijai:
 sugeneruojam optimalius failus (is src) i viena: (folder dist, main.js):
